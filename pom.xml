@@ -2,8 +2,7 @@
 <project>
 
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>org.acme.offline-repo</groupId>
+    <groupId>org.abc.offline-repo</groupId>
     <artifactId>custom-repo</artifactId>
     <version>1.0.0</version>
     <name>Generate offline features repository</name>
@@ -25,7 +24,6 @@
                   <configuration>
                   <descriptors>
                      <!--  Feature Descriptor Files -->
-
                      <descriptor>
                         mvn:org.apache.camel.karaf/apache-camel/2.22.0/xml/features
                      </descriptor>
@@ -35,26 +33,16 @@
                      <descriptor>
                         mvn:org.apache.karaf.features/standard/4.2.0/xml/features
                      </descriptor>
-                     <!-- <descriptor>
-                        mvn:org.apache.camel.karaf/camel-karaf-commands/2.22.0/xml/features
-                     </descriptor> -->
-                     <!-- <descriptor>
-                        mvn:org.apache.camel.karaf/features/2.1.0/xml/features
-                     </descriptor> -->
                   </descriptors>
                   <features>
                      <!--  Features to add to offline respository -->
                      <feature>camel-core</feature>
                      <feature>camel-base64</feature>
-                     <!-- <feature>camel-commands-core</feature> -->
-                     <!-- <feature>camel-karaf-commands</feature> -->
                      <feature>camel-script</feature>
                      <feature>camel-script-groovy</feature>
                      <feature>camel-script-javascript</feature>
                      <feature>camel-ftp</feature>
                      <feature>camel-quartz2</feature>
-                     <!-- <feature>camel-http-common</feature> -->
-                     <!-- <feature>camel-jetty</feature> -->
                      <feature>camel-jetty9</feature>
                      <feature>camel-blueprint</feature>
                      <feature>camel-jms</feature>
